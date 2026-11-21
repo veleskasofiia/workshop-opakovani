@@ -8,3 +8,11 @@
 #    Padlo 3 a 5, dohromady 8.
 
 
+import random
+
+throw = random.randrange(1,7)
+
+first_number = random.randrange(1,7)
+second_number = random.randrange(1,7)
+
+print(f"\n First number:", first_number, "\n Second number:" , second_number ,"\n Together:", first_number + second_number)
