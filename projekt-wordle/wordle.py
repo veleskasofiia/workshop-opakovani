@@ -7,5 +7,18 @@
 
 import logika
 
+ZNACKY = {"spravne": "+", "jinde": "?", "neni": "-"}
+
 print("Wordle")
 print(f"Hádáš slovo o {logika.DELKA_SLOVA} písmenech a máš {logika.POCET_POKUSU} pokusů.")
+
+def vypis_pokus(hadane, vysledek):
+    pozice = logika.vyhodnot(hadane, vysledek)
+    # ZNACKY = []
+    # pismena = []
+    for i in pozice:
+        print(ZNACKY[i], end= " ")
+
+vypis_pokus("kabat","kočka")
+print()
+
