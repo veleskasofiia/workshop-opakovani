@@ -34,6 +34,6 @@ def uprav_vstup(text):
 def chyba_slova(slovo):
     chyba = []
     if len(slovo) != DELKA_SLOVA:
-        chyba.append(f"Slovo musí mít 5 písmen.")
-    return(" ")
+        chyba.append("Slovo musí mít 5 písmen.")
+    return (" ")
     
