@@ -30,3 +30,12 @@ def test_pismeno_na_jinem_miste():
 
 def test_diakritika_je_jine_pismeno():
     assert logika.vyhodnot("město", "mesto") == [S, N, S, S, S]
+
+def test_uprav_vstup():
+    assert logika.uprav_vstup("  KOČKA ") == " "
+
+def test_kratke_slovo():
+    assert logika.chyba_slova("kočk") == "Slovo musí mít 5 písmen."
+
+def test_spravna_delka():
+    assert logika.chyba_slova("kočka") == " "

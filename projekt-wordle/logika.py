@@ -24,3 +24,16 @@ def vyhodnot(hadane, tajne):
             
     return(pozice)
 # vyhodnot("kabát", "kočka")
+
+
+def uprav_vstup(text):
+    while True:
+        return text.lower().strip()
+    return False
+    
+def chyba_slova(slovo):
+    chyba = []
+    if len(slovo) != DELKA_SLOVA:
+        chyba.append(f"Slovo musí mít 5 písmen.")
+    return(" ")
+    
